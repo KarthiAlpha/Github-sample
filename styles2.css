@@ -1,0 +1,77 @@
+/* Add some animations to the header and button */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #231198;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #751378;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.05);
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #751378;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #964e96;
+    transform: scale(1.05);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(17, 20, 181, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+main:hover {
+    box-shadow: 0 0 15px rgba(17, 20, 181, 0.4);
+}
+
+#weather-data {
+    text-align: center;
+    font-size: 18px;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
